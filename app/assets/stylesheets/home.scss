@@ -1,0 +1,101 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.menu2 {
+  overflow: hidden;
+}
+
+.titulo{
+    background: url( asset-path('info.jpg') ) no-repeat;
+    
+    background-size: 100% 110%;
+    
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    
+  }
+
+.subtitulo{
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    
+}
+
+  h1 {
+    font-size: 52px;
+    color: white;
+  }
+
+  h2 {
+    font-size: 12px;
+    color: black;
+    padding: 10px 100px;
+  } 
+
+.parrafo1{
+    font-size: 30px;
+    color: white
+    
+}
+
+.parrafo2{
+  color: black;
+  
+  
+}
+
+
+
+
+
+
+.menu2 li {
+  text-align: center;
+  padding: 0px;
+  font-family: "Kate Moss", sans-serif;
+  font-size: 0.6rem;
+  -webkit-font-feature-settings: white;
+          font-feature-settings: white;
+  display: inline-block;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.menu2 {
+  /* list-style: none; */
+  background: black;
+  background-size: 100% 100%;
+  /* padding: 1px 5px; */
+  text-align: center;
+}
+
+.menu2 .title2 {
+  color: white;
+  font-family: "Kate Moss", sans-serif;
+  font-size: 0.8rem;
+  padding-top: 10px;
+}
+
+.menu2 a.sources {
+  text-decoration: none;
+  background: #0075a1;
+  color: paleturquoise;
+  padding-bottom: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.menu2 a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.menu2 a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+

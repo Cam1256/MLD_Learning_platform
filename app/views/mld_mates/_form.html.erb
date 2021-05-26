@@ -1,0 +1,51 @@
+
+
+<%= form_with(model: mld_mate) do |form| %>
+  <% if mld_mate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mld_mate.errors.count, "error") %> prohibited this mld_mate from being saved:</h2>
+
+      <ul>
+        <% mld_mate.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-label">
+    
+    <%= form.text_field :first_name, class:"form-control" , placeholder: "First Name" %>
+  </div>
+
+  <div class="field form-label">
+    
+    <%= form.text_field :last_name, class:"form-control", placeholder: "Last Name" %>
+  </div>
+
+  <div class="field form-label">
+    
+    <%= form.text_field :email, class:"form-control", placeholder: "email" %>
+  </div>
+
+  <div class="field form-label">
+    
+    <%= form.text_field :whatsapp,class:"form-control", placeholder: "Whatsapp" %>
+  </div>
+
+  <div class="field form-label">
+    
+    <%= form.text_field :github, class:"form-control", placeholder: "Git Hub" %>
+  </div>
+
+  <div class="field form-label">
+    
+    <%= form.number_field :user_id, id: :friend_user_id, class:"form-control", value: current_user.id, type: :hidden %>
+  </div>
+  
+  <br>
+  <div class="actions form-label">
+    <%= form.submit class: "btn btn-secondary" %>
+  </div>
+<% end %>
+

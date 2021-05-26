@@ -1,0 +1,29 @@
+
+<section class = "show" style = "padding 20px">
+
+<div class="name">
+  <p>
+  
+    <%= @mld_mate.first_name %>
+    <%= @mld_mate.last_name %>
+  </p>
+
+
+<div/>
+
+<div class="lead">
+  <%= @mld_mate.email %> |
+  <%= @mld_mate.whatsapp %> |
+  <%= @mld_mate.github %>
+<div/>
+
+<br>
+
+
+<%= link_to 'Edit', edit_mld_mate_path(@mld_mate), class:"btn btn-secondary" %> 
+
+<%= link_to 'Delete', @mld_mate, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+
+<%= link_to 'Back', mld_mates_path, class:"btn btn-secondary"  %>
+
+<section/>

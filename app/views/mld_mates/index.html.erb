@@ -1,0 +1,42 @@
+<section class = "show" style = "padding 20px">
+
+
+<h3>Mld Mates</h3>
+
+<table class="table table-secondary table-striped table-bordered border-info table-hover">
+<thead class="table-dark">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Whatsapp</th>
+      <th>Github</th>
+      
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mld_mates.each do |mld_mate| %>
+      <% if mld_mate.user == current_user %>
+      <td>
+        <%= link_to mld_mate.first_name + ' ' + mld_mate.last_name, mld_mate %>
+      </td>
+        <td><%= mld_mate.email %></td>
+        <td><%= mld_mate.whatsapp %></td>
+        <td><%= mld_mate.github %></td>
+        
+        
+        
+    
+        <td><%= link_to 'Delete', mld_mate, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
+        
+      </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mld Mate', new_mld_mate_path, class:"btn btn-secondary" %>
+</section>
